@@ -7,10 +7,10 @@ exports.up = function(knex) {
     tbl.integer('awake_time').notNullable();
 
     tbl
-      .integer('child_id')
+      .integer('user_id')
       .unsigned()
       .references('id')
-      .inTable('child_bio')
+      .inTable('users')
       .onDelete('CASCADE')
       .onUpdate('CASCADE');
   });

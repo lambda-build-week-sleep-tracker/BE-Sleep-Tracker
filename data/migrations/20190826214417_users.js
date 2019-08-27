@@ -3,13 +3,17 @@ exports.up = function(knex) {
     tbl.increments();
 
     tbl
-      .string('email', 254)
+      .string('email')
       .notNullable()
       .unique();
 
-    tbl.string('name').notNullable();
+    tbl.string('parent_name').notNullable();
 
-    tbl.string('password', 254).notNullable();
+    tbl.string('child_name').notNullable();
+
+    tbl.string('birthday').notNullable();
+
+    tbl.string('password').notNullable();
   });
 };
 

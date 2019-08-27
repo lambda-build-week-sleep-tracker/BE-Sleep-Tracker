@@ -14,11 +14,13 @@ router.post('/register', validateUserContent, (req, res) => {
   Users.add(user)
     .then(saved => {
       const token = generateToken(saved);
-      const { id, name, email } = saved;
+      const { id, parent_name, email, child_name, birthday } = saved;
       res.status(201).json({
         id,
-        name,
+        parent_name,
         email,
+        child_name,
+        birthday,
         token,
       });
     })
@@ -36,8 +38,15 @@ router.post('/login', validateUserContent, (req, res) => {
       if (user && bcrypt.compareSync(password, user.password)) {
         // generate token
         const token = generateToken(user);
-        const { id, email, name } = user;
-        res.status(200).json({ id, email, name, token });
+        const { id, email, parent_name, child_name, birthday } = user;
+        res.status(200).json({
+          id,
+          email,
+          parent_name,
+          child_name,
+          birthday,
+          token,
+        });
       } else {
         res.status(401).json({ message: 'Invalid Email or Password' });
       }
