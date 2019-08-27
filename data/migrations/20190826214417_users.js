@@ -7,6 +7,8 @@ exports.up = function(knex) {
       .notNullable()
       .unique();
 
+    tbl.string('name').notNullable();
+
     tbl.string('password', 254).notNullable();
   });
 };
