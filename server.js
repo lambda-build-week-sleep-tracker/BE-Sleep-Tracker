@@ -4,6 +4,7 @@ const cors = require('cors');
 
 const authRouter = require('./resources/users/auth-router.js');
 const usersRouter = require('./resources/users/users-router.js');
+const sleepRouter = require('./resources/sleep/sleep-router.js');
 
 const server = express();
 
@@ -13,9 +14,11 @@ server.use(cors());
 
 server.use('/auth', authRouter);
 server.use('/users', usersRouter);
+server.use('/api/sleep', sleepRouter);
 
+// sanity check
 server.get('/', (req, res) => {
-  res.send("IT'S ALIVE!!!");
+  res.json({ server: 'running' });
 });
 
 module.exports = server;
