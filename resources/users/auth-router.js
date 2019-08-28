@@ -2,6 +2,7 @@ const router = require('express').Router();
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const secrets = require('../../config/secrets.js');
+const calculateAge = require('../../helpers/calculate-age.js');
 
 const Users = require('./users-model.js');
 
@@ -15,12 +16,13 @@ router.post('/register', validateUserContent, (req, res) => {
     .then(saved => {
       const token = generateToken(saved);
       const { id, parent_name, email, child_name, birthday } = saved;
+      const age = calculateAge(birthday);
       res.status(201).json({
         id,
         parent_name,
         email,
         child_name,
-        birthday,
+        age,
         token,
       });
     })
@@ -39,12 +41,13 @@ router.post('/login', validateUserContent, (req, res) => {
         // generate token
         const token = generateToken(user);
         const { id, email, parent_name, child_name, birthday } = user;
+        const age = calculateAge(birthday);
         res.status(200).json({
           id,
           email,
           parent_name,
           child_name,
-          birthday,
+          age,
           token,
         });
       } else {
