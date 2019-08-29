@@ -8,7 +8,7 @@
 
 ```
 {
-  "email": "amanda@gmail.com",
+  "email": "jenn@gmail.com",
   "password": "password123"
 }
 ```
@@ -18,9 +18,9 @@
 ```
 {
   "id": 1,
-  "email": "amanda@aol.com",
-  "parent_name": "Amanda Lane",
-  "child_name": "Brannon",
+  "email": "jenn@gmail.com",
+  "parent_name": "Jennifer Taylor",
+  "child_name": "Caroline",
   "age": "1 week",
   "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWJqZWN0IjoxLCJlbWFpbCI6ImFtYW5kYUBhb2wuY29tIiwiaWF0IjoxNTY3MDM4MDg3LCJleHAiOjE1Njc2NDI4ODd9.vNfxryaHCkhsZ1I1jJHmH4iscWxV38FGvEyJEtKPBHI"
 }
@@ -32,9 +32,9 @@
 
 ```
 {
-	"email": "amanda@gmail.com",
-	"parent_name": "Amanda Lane",
-	"child_name": "Brannon",
+	"email": "jenn@gmail.com",
+	"parent_name": "Jennifer Taylor",
+	"child_name": "Caroline",
 	"birthday": 1565413200000,
 	"password": "password123"
 }
@@ -45,9 +45,9 @@
 ```
 {
   "id": 1,
-  "parent_name": "Amanda Lane",
-  "email": "amanda@aol.com",
-  "child_name": "Brannon",
+  "parent_name": "Jennifer Taylor",
+  "email": "jenn@gmail.com",
+  "child_name": "Caroline",
   "age": "1 week",
   "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWJqZWN0IjoxLCJlbWFpbCI6ImFtYW5kYUBhb2wuY29tIiwiaWF0IjoxNTY3MDQ1NDk1LCJleHAiOjE1Njc2NTAyOTV9.dS6X1D3MAK-YD7Qn2kxVPvvzxKQV-ya7LKznrpchNzY"
 }
@@ -74,9 +74,9 @@
 ```
 {
   "id": 1,
-  "email": "amanda@aol.com",
-  "parent_name": "Amanda Lane",
-  "child_name": "Brannon",
+  "email": "jenn@gmail.com",
+  "parent_name": "Jennifer Taylor,
+  "child_name": "Caroline",
   "birthday": "2019-08-21T05:00:00.000Z",
   "password": "$2a$10$e73godn0jIRzGPj.kWYwAueL5jMxOoXRG2vb.cPjl0AYdRcO.Zc0.",
   "data": [
@@ -92,10 +92,10 @@
       "sleep_end": 1566992209228,
       "user_id": 1
     },
-        {
-      "id": 2,
-      "sleep_start": 1566951009244,
-      "sleep_end": 1566992209228,
+    {
+      "id": 3,
+      "sleep_start": 1566871389223,
+      "sleep_end": 1566909409223,
       "user_id": 1
     }
   ]
