@@ -65,6 +65,21 @@
 }
 ```
 
+## PUT /api/sleep/:id
+
+Edits the recored matching the `params: id`
+
+**Expected Parameter:** The id of the sleep object
+
+#### Expected Payload:
+
+```
+{
+  "sleep_start": 1567041409223,
+  "sleep_end": 1567073809223
+}
+```
+
 ## GET /api/sleep/:userid
 
 **Expected Parameter:** The user_id from local storage

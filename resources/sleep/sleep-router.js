@@ -32,4 +32,17 @@ router.get('/:id', (req, res) => {
     });
 });
 
+router.put('/:id', (req, res) => {
+  const id = req.params.id;
+  const changes = req.body;
+
+  SleepDb.updateSleepData(id, changes)
+    .then(updatedData => {
+      res.status(201).json(updatedData);
+    })
+    .catch(err => {
+      res.status(500).json(err);
+    });
+});
+
 module.exports = router;
