@@ -6,20 +6,15 @@ module.exports = {
 };
 
 function addSleepData(data) {
+  // const { sleep_start, sleep_end } = data;
+  // let start = new Date(sleep_start).getTime();
+  // let end = new Date(sleep_end).getTime();
+  // let sleep_hours = (end - start) / (1000 * 3600);
+  // console.log(sleep_hours.toFixed(2));
+
   return db('sleep').insert(data, 'id');
 }
 
 function getSleepDataByUser(id) {
   return db('sleep').where({ 'sleep.user_id': id });
 }
-
-// function getByUserId(id) {
-//   // return db('favorites').where({ user_id });
-
-//   return db('users')
-//     .where({ id })
-//     .first();
-//   // return db('sleep')
-//   //   .where({ id })
-//   //   .first();
-// }
