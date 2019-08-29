@@ -6,8 +6,6 @@ exports.up = function(knex) {
 
     tbl.string('awake_time').notNullable();
 
-    tbl.integer('sleep_hours').notNullable();
-
     tbl
       .integer('user_id')
       .unsigned()
