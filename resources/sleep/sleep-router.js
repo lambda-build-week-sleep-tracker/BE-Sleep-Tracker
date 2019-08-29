@@ -24,11 +24,11 @@ router.get('/:id', (req, res) => {
           res.status(200).json({ ...user, data });
         })
         .catch(err => {
-          res.status(500).json({ yo: 'yo' });
+          res.status(500).json(err);
         });
     })
-    .then(err => {
-      res.status(500).json({ bo: 'bo' });
+    .catch(err => {
+      res.status(500).json(err);
     });
 });
 

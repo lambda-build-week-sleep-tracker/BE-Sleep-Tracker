@@ -2,9 +2,9 @@ exports.up = function(knex) {
   return knex.schema.createTable('sleep', tbl => {
     tbl.increments();
 
-    tbl.string('sleep_start').notNullable();
+    tbl.integer('sleep_start').notNullable();
 
-    tbl.string('sleep_end').notNullable();
+    tbl.integer('sleep_end').notNullable();
 
     tbl
       .integer('user_id')
