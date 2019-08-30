@@ -73,7 +73,7 @@ exports.seed = function(knex) {
         {
           user_id: 1,
           sleep_start: new Date('August 9, 2019 12:14:00').getTime(),
-          sleep_end: new Date('August 9, 2019 01:52:00').getTime(),
+          sleep_end: new Date('August 9, 2019 14:52:00').getTime(),
         },
         {
           user_id: 1,
