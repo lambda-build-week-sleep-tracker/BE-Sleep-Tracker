@@ -11,7 +11,7 @@ exports.up = function(knex) {
 
     tbl.string('child_name').notNullable();
 
-    tbl.string('birthday').notNullable();
+    tbl.integer('birthday').notNullable();
 
     tbl.string('password').notNullable();
   });
