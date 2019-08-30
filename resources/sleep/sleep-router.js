@@ -45,4 +45,16 @@ router.put('/:id', (req, res) => {
     });
 });
 
+router.delete('/:id', (req, res) => {
+  const id = req.params.id;
+
+  SleepDb.removeSleepData(id)
+    .then(del => {
+      res.status(200).json({ message: 'session deleted' });
+    })
+    .catch(err => {
+      res.status(500).json(err);
+    });
+});
+
 module.exports = router;

@@ -4,6 +4,7 @@ module.exports = {
   addSleepData,
   getSleepDataByUser,
   updateSleepData,
+  removeSleepData,
 };
 
 function addSleepData(data) {
@@ -18,4 +19,10 @@ function updateSleepData(id, changes) {
   return db('sleep')
     .where({ id })
     .update(changes);
+}
+
+function removeSleepData(id) {
+  return db('sleep')
+    .where({ id })
+    .delete();
 }

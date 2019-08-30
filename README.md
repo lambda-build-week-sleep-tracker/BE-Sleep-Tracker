@@ -71,7 +71,7 @@
 
 Edits the record matching the `params: id`
 
-**Expected Parameter:** The id of the sleep object
+**Expected Parameter:** The id of the sleep session
 
 #### Expected Payload:
 
@@ -81,6 +81,10 @@ Edits the record matching the `params: id`
   "sleep_end": 1567073809223
 }
 ```
+
+## DELETE /api/sleep/:id
+
+**Expected Parameter:** The id of the sleep session
 
 ## GET /api/sleep/:userid
 
