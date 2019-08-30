@@ -67,7 +67,7 @@
 
 ## PUT /api/sleep/:id
 
-Edits the recored matching the `params: id`
+Edits the record matching the `params: id`
 
 **Expected Parameter:** The id of the sleep object
 
