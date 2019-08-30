@@ -1,6 +1,6 @@
 # Sleep Tracker Backend
 
-# [https://sleeptracker-api.herokuapp.com/](https://sleeptracker-api.herokuapp.com/)
+## [https://sleeptracker-api.herokuapp.com/](https://sleeptracker-api.herokuapp.com/)
 
 # Endpoints
 
