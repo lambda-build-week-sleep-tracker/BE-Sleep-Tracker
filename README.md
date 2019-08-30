@@ -8,7 +8,7 @@
 
 ```
 {
-  "email": "jenn@gmail.com",
+  "email": "pam@gmail.com",
   "password": "password123"
 }
 ```
@@ -18,9 +18,9 @@
 ```
 {
   "id": 1,
-  "email": "jenn@gmail.com",
-  "parent_name": "Jennifer Taylor",
-  "child_name": "Caroline",
+  "email": "pam@gmail.com",
+  "parent_name": "Pam Beasley",
+  "child_name": "Cecelia",
   "age": "1 week",
   "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWJqZWN0IjoxLCJlbWFpbCI6ImFtYW5kYUBhb2wuY29tIiwiaWF0IjoxNTY3MDM4MDg3LCJleHAiOjE1Njc2NDI4ODd9.vNfxryaHCkhsZ1I1jJHmH4iscWxV38FGvEyJEtKPBHI"
 }
@@ -32,11 +32,11 @@
 
 ```
 {
-	"email": "jenn@gmail.com",
-	"parent_name": "Jennifer Taylor",
-	"child_name": "Caroline",
-	"birthday": 1565413200000,
-	"password": "password123"
+  "email": "pam@gmail.com",
+  "parent_name": "Pam Beasley",
+  "child_name": "Cecelia",
+  "birthday": 1565413200000,
+  "password": "password123"
 }
 ```
 
@@ -45,9 +45,9 @@
 ```
 {
   "id": 1,
-  "parent_name": "Jennifer Taylor",
-  "email": "jenn@gmail.com",
-  "child_name": "Caroline",
+  "parent_name": "Pam Beasley",
+  "email": "pam@gmail.com",
+  "child_name": "Cecelia",
   "age": "1 week",
   "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWJqZWN0IjoxLCJlbWFpbCI6ImFtYW5kYUBhb2wuY29tIiwiaWF0IjoxNTY3MDQ1NDk1LCJleHAiOjE1Njc2NTAyOTV9.dS6X1D3MAK-YD7Qn2kxVPvvzxKQV-ya7LKznrpchNzY"
 }
@@ -89,9 +89,9 @@ Edits the record matching the `params: id`
 ```
 {
   "id": 1,
-  "email": "jenn@gmail.com",
-  "parent_name": "Jennifer Taylor,
-  "child_name": "Caroline",
+  "email": "pam@gmail.com",
+  "parent_name": "Pam Beasley,
+  "child_name": "Cecelia",
   "birthday": "2019-08-21T05:00:00.000Z",
   "password": "$2a$10$e73godn0jIRzGPj.kWYwAueL5jMxOoXRG2vb.cPjl0AYdRcO.Zc0.",
   "data": [
