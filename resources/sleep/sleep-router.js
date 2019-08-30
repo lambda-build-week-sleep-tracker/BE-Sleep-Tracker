@@ -2,7 +2,7 @@ const router = require('express').Router();
 
 const Users = require('../users/users-model.js');
 const SleepDb = require('./sleep-model.js');
-// const restricted = require('../middleware/restr
+// const restricted = require('../../middleware/restricted-middleware');
 
 router.post('/', (req, res) => {
   SleepDb.addSleepData(req.body)
