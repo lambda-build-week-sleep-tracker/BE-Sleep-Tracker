@@ -37,11 +37,6 @@ exports.seed = function(knex) {
         },
         {
           user_id: 1,
-          sleep_start: new Date('August 2, 2019 20:02:00').getTime(),
-          sleep_end: new Date('August 3, 2019 05:43:00').getTime(),
-        },
-        {
-          user_id: 1,
           sleep_start: new Date('August 3, 2019 21:42:00').getTime(),
           sleep_end: new Date('August 4, 2019 07:31:00').getTime(),
         },
