@@ -8,7 +8,7 @@ module.exports = {
 };
 
 function addSleepData(data) {
-  return db('sleep').insert(data, 'id');
+  return db('sleep').insert(data);
 }
 
 function getSleepDataByUser(id) {
