@@ -7,8 +7,14 @@ module.exports = {
   removeSleepData,
 };
 
-function addSleepData(data) {
-  return db('sleep').insert(data);
+// function addSleepData(data) {
+//   return db('sleep').insert(data, 'id');
+// }
+
+async function addSleepData(data) {
+  const [id] = await db('sleep').insert(data, 'id');
+
+  return getSleepDataByUser(id);
 }
 
 function getSleepDataByUser(id) {
