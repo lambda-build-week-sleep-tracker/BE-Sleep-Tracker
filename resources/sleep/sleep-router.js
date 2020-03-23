@@ -2,9 +2,9 @@ const router = require('express').Router();
 
 const Users = require('../users/users-model.js');
 const SleepDb = require('./sleep-model.js');
-// const restricted = require('../../middleware/restricted-middleware');
+const restricted = require('../../middleware/restricted-middleware');
 
-router.post('/', (req, res) => {
+router.post('/', restricted, (req, res) => {
   SleepDb.addSleepData(req.body)
     .then(data => {
       res.status(201).json(data);
@@ -14,7 +14,7 @@ router.post('/', (req, res) => {
     });
 });
 
-router.get('/:id', (req, res) => {
+router.get('/:id', restricted, (req, res) => {
   const id = req.params.id;
 
   Users.findById(id)
@@ -32,7 +32,7 @@ router.get('/:id', (req, res) => {
     });
 });
 
-router.put('/:id', (req, res) => {
+router.put('/:id', restricted, (req, res) => {
   const id = req.params.id;
   const changes = req.body;
 
@@ -45,7 +45,7 @@ router.put('/:id', (req, res) => {
     });
 });
 
-router.delete('/:id', (req, res) => {
+router.delete('/:id', restricted, (req, res) => {
   const id = req.params.id;
 
   SleepDb.removeSleepData(id)
