@@ -32,7 +32,7 @@ module.exports = {
   testing: {
     client: 'sqlite3',
     connection: {
-      filename: './data/db/test.sqlite3',
+      filename: './data/test.sqlite3',
     },
     useNullAsDefault: true,
     migrations: {
@@ -41,10 +41,10 @@ module.exports = {
     seeds: {
       directory: './data/seeds',
     },
-    pool: {
-      afterCreate: (connection, done) => {
-        connection.run('PRAGMA foreign_keys = ON', done);
-      },
-    },
+    // pool: {
+    //   afterCreate: (connection, done) => {
+    //     connection.run('PRAGMA foreign_keys = ON', done);
+    //   },
+    // },
   },
 };
